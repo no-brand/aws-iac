@@ -14,8 +14,8 @@
 ## ELB 의 종류
 로드밸런서의 종류는 Application Load Balancer (ALB), Network Load Balancer (NLB), Class Load Balancer (CLB) 로 나뉩니다.
  - ALB : Application 기반의 (HTTP, HTTPS) 분산 처리를 제공
-   - 상대적으로 처리속도가 느릴 수 있지만, HTTPS 에 대해 다양한 라우팅 정책 제공
-     > URL 경로 기반, 호스트 기반, HTTP 헤더 기반 라우팅 등 다양한 규칙 정의 가능
+   - 상대적으로 처리속도가 느릴 수 있지만, HTTPS 에 대해 다양한 라우팅 정책 제공 <br>
+     URL 경로 기반, 호스트 기반, HTTP 헤더 기반 라우팅 등 다양한 규칙 정의 가능
    - Forward, Re-direction 지원 및 HTTPS 응답 정의 가능
  - NLB : 네트워크 기반의 (TCP, UDP) 분산 처리를 제공
    - 빠른 처리속도를 제공
@@ -36,9 +36,9 @@
 
 ## ELB 특징
 ### 통신 방식
-1. Internet Facing Load Balancer
+1. Internet Facing Load Balancer <br>
    Public Address 를 가집니다. 인터넷을 통해서 들어오는 요청을 ELB 에 등록된 서버들로 라우팅 합니다.
-2. Internal Load Balancer
+2. Internal Load Balancer <br>
    Private Address 를 가집니다. ELB 가 위치한 VPC 에 접근해서 등록된 서버들로 라우팅 합니다.
    
 ### 그 외 특징들
